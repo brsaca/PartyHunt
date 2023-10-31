@@ -17,6 +17,7 @@ struct ListView: View {
             title
             
             // Events nearBy
+            EventsList()
             
             // Recommended places
             Spacer()
