@@ -11,6 +11,10 @@
 		4B675AD82AF086BE00D7DB42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD72AF086BE00D7DB42 /* ContentView.swift */; };
 		4B675ADA2AF086BF00D7DB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AD92AF086BF00D7DB42 /* Assets.xcassets */; };
 		4B675ADD2AF086BF00D7DB42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B675ADC2AF086BF00D7DB42 /* Preview Assets.xcassets */; };
+		4B675AED2AF092D100D7DB42 /* OneBrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AEC2AF092D000D7DB42 /* OneBrush.ttf */; };
+		4B675AF12AF092EC00D7DB42 /* Outfit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AEE2AF092EC00D7DB42 /* Outfit-Black.ttf */; };
+		4B675AF22AF092EC00D7DB42 /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AEF2AF092EC00D7DB42 /* Outfit-Bold.ttf */; };
+		4B675AF32AF092EC00D7DB42 /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AF02AF092EC00D7DB42 /* Outfit-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		4B675AD72AF086BE00D7DB42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B675AD92AF086BF00D7DB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B675ADC2AF086BF00D7DB42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4B675AEC2AF092D000D7DB42 /* OneBrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OneBrush.ttf; sourceTree = "<group>"; };
+		4B675AEE2AF092EC00D7DB42 /* Outfit-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Black.ttf"; sourceTree = "<group>"; };
+		4B675AEF2AF092EC00D7DB42 /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Bold.ttf"; sourceTree = "<group>"; };
+		4B675AF02AF092EC00D7DB42 /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
+		4B675AF42AF092FD00D7DB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 		4B675AD42AF086BE00D7DB42 /* PartyHunt */ = {
 			isa = PBXGroup;
 			children = (
+				4B675AF42AF092FD00D7DB42 /* Info.plist */,
 				4B675AE32AF08D5A00D7DB42 /* App */,
 				4B675AE62AF08D7B00D7DB42 /* Extension */,
 				4B675AE72AF08D8600D7DB42 /* Interactor */,
@@ -119,6 +129,7 @@
 		4B675AE92AF08D9800D7DB42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4B675AEB2AF092BF00D7DB42 /* Fonts */,
 				4B675AD92AF086BF00D7DB42 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -129,6 +140,17 @@
 			children = (
 			);
 			path = ModelLogic;
+			sourceTree = "<group>";
+		};
+		4B675AEB2AF092BF00D7DB42 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4B675AEE2AF092EC00D7DB42 /* Outfit-Black.ttf */,
+				4B675AEF2AF092EC00D7DB42 /* Outfit-Bold.ttf */,
+				4B675AF02AF092EC00D7DB42 /* Outfit-SemiBold.ttf */,
+				4B675AEC2AF092D000D7DB42 /* OneBrush.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B675ADD2AF086BF00D7DB42 /* Preview Assets.xcassets in Resources */,
+				4B675AF12AF092EC00D7DB42 /* Outfit-Black.ttf in Resources */,
+				4B675AF32AF092EC00D7DB42 /* Outfit-SemiBold.ttf in Resources */,
+				4B675AF22AF092EC00D7DB42 /* Outfit-Bold.ttf in Resources */,
+				4B675AED2AF092D100D7DB42 /* OneBrush.ttf in Resources */,
 				4B675ADA2AF086BF00D7DB42 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +365,7 @@
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PartyHunt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -368,6 +395,7 @@
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PartyHunt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
