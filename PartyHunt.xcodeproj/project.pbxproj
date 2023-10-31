@@ -15,6 +15,7 @@
 		4B675AF12AF092EC00D7DB42 /* Outfit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AEE2AF092EC00D7DB42 /* Outfit-Black.ttf */; };
 		4B675AF22AF092EC00D7DB42 /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AEF2AF092EC00D7DB42 /* Outfit-Bold.ttf */; };
 		4B675AF32AF092EC00D7DB42 /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AF02AF092EC00D7DB42 /* Outfit-SemiBold.ttf */; };
+		4B675AF62AF1763700D7DB42 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AF52AF1763700D7DB42 /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4B675AEF2AF092EC00D7DB42 /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Bold.ttf"; sourceTree = "<group>"; };
 		4B675AF02AF092EC00D7DB42 /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
 		4B675AF42AF092FD00D7DB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B675AF52AF1763700D7DB42 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		4B675AE62AF08D7B00D7DB42 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4B675AF52AF1763700D7DB42 /* Font.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				4B675AD82AF086BE00D7DB42 /* ContentView.swift in Sources */,
 				4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */,
+				4B675AF62AF1763700D7DB42 /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
