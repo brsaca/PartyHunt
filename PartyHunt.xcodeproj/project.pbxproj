@@ -51,9 +51,14 @@
 		4B675AD42AF086BE00D7DB42 /* PartyHunt */ = {
 			isa = PBXGroup;
 			children = (
-				4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */,
-				4B675AD72AF086BE00D7DB42 /* ContentView.swift */,
-				4B675AD92AF086BF00D7DB42 /* Assets.xcassets */,
+				4B675AE32AF08D5A00D7DB42 /* App */,
+				4B675AE62AF08D7B00D7DB42 /* Extension */,
+				4B675AE72AF08D8600D7DB42 /* Interactor */,
+				4B675AE82AF08D9000D7DB42 /* Model */,
+				4B675AEA2AF08DEC00D7DB42 /* ModelLogic */,
+				4B675AE92AF08D9800D7DB42 /* Resources */,
+				4B675AE42AF08D6400D7DB42 /* View */,
+				4B675AE52AF08D7200D7DB42 /* ViewModel */,
 				4B675ADB2AF086BF00D7DB42 /* Preview Content */,
 			);
 			path = PartyHunt;
@@ -65,6 +70,65 @@
 				4B675ADC2AF086BF00D7DB42 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B675AE32AF08D5A00D7DB42 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B675AE42AF08D6400D7DB42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B675AD72AF086BE00D7DB42 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B675AE52AF08D7200D7DB42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B675AE62AF08D7B00D7DB42 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B675AE72AF08D8600D7DB42 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4B675AE82AF08D9000D7DB42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B675AE92AF08D9800D7DB42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B675AD92AF086BF00D7DB42 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B675AEA2AF08DEC00D7DB42 /* ModelLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
