@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension UIFont {
+extension Font {
     enum Outfit {
         case black
         case bold
