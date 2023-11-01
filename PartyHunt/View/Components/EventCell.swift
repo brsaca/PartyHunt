@@ -28,7 +28,12 @@ struct EventCell: View {
                 Spacer()
                 
                 if (status != .none) {
-                    StatusIcon(status: status)
+                    if (status == .next) {
+                        NextButton()
+                            .padding(.trailing)
+                    } else {
+                        StatusIcon(status: status)
+                    }
                 }
             }
             
@@ -41,6 +46,11 @@ struct EventCell: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.customYellow)
             
+            if (status == .next) {
+                Spacer()
+                    .frame(height: 20)
+            }
+            
         }
         .padding(.horizontal, 24)
         .padding(.vertical, 16)
@@ -49,6 +59,10 @@ struct EventCell: View {
 }
 
 // MARK: - Previews
-#Preview {
+#Preview("booked") {
     EventCell(event: Events.mock.event[0], status: .booked)
+}
+
+#Preview("next") {
+    EventCell(event: Events.mock.event[0], status: .next)
 }

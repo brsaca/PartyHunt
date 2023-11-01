@@ -11,4 +11,5 @@ enum Status: String {
     case none
     case booked = "nVector"
     case favorite = "star"
+    case next
 }

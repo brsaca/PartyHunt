@@ -32,6 +32,7 @@
 		4B67DDC92AF2D54D002D4E9E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4B67DDC82AF2D54D002D4E9E /* Kingfisher */; };
 		4B67DDCB2AF2D8E7002D4E9E /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */; };
 		4B67DDCD2AF2DB41002D4E9E /* ScreenBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */; };
+		4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		4B67DDC52AF2CBAD002D4E9E /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBar.swift; sourceTree = "<group>"; };
+		4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,10 +220,12 @@
 		4B675AFB2AF1848500D7DB42 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4B675B082AF19BC700D7DB42 /* EventCell.swift */,
+				4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */,
 				4B675AFC2AF1849C00D7DB42 /* RoundButton.swift */,
 				4B675B0A2AF19EE500D7DB42 /* StatusIcon.swift */,
 				4B675AFE2AF1857700D7DB42 /* UserAvatar.swift */,
-				4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */,
+				4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,7 +233,6 @@
 		4B675B072AF19B9800D7DB42 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				4B675B082AF19BC700D7DB42 /* EventCell.swift */,
 				4B675B052AF198D900D7DB42 /* EventsList.swift */,
 			);
 			name = Components;
@@ -330,6 +333,7 @@
 				4B675AFD2AF1849C00D7DB42 /* RoundButton.swift in Sources */,
 				4B67DDC22AF2C8D6002D4E9E /* DetailView.swift in Sources */,
 				4B675B092AF19BC700D7DB42 /* EventCell.swift in Sources */,
+				4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */,
 				4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */,
 				4B675B032AF1952800D7DB42 /* TestData.swift in Sources */,
 				4B67DDCB2AF2D8E7002D4E9E /* CustomNavBar.swift in Sources */,

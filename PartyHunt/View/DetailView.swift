@@ -33,11 +33,12 @@ struct DetailView: View {
                     .offset(y: 50)
                 
                 //Bottom
+                VStack {
+                    Spacer()
+                    
+                    EventCell(event: event, status: .next)
+                }
             }
-            
-            // Bottom
-            Spacer()
-            
         }
         .backgroundStyle()
     }
