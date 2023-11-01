@@ -19,12 +19,12 @@ struct TicketView: View {
             
             // Image
             topSection
-            
         
             // Details
             detailsSection
             
             // Code
+            scanCode
             
             Spacer()
         }
@@ -38,7 +38,7 @@ extension TicketView {
             KFImage(event.image)
                 .resizable()
                 .scaledToFill()
-                .frame(width: UIScreen.main.bounds.size.width * 0.3 )
+                .frame(width: UIScreen.main.bounds.size.width * 0.25 )
                 
             VStack(alignment:.leading, spacing: 10) {
                 Text(event.artist)
@@ -53,11 +53,15 @@ extension TicketView {
             
             Spacer()
         }
-        .frame(height: UIScreen.main.bounds.size.height * 0.25)
+        .frame(height: UIScreen.main.bounds.size.height * 0.20)
         .padding(.horizontal, 20)
         .padding(.top, 20)
-        .border(Color.customBlack, width: 12)
         .background(.black.opacity(0.5))
+        .clipShape(
+            TicketShape()
+                .rotation(Angle(degrees: 0))
+        )
+        .border(Color.customBlack.opacity(0.7), width: 12)
         .cornerRadius(10)
         .padding(.horizontal)
     }
@@ -80,9 +84,39 @@ extension TicketView {
             }
         }
         .frame(height: UIScreen.main.bounds.size.height * 0.40)
-        .padding(.horizontal, 20)
-        .border(Color.customBlack, width: 12)
+        .padding(.horizontal, 40)
+        .border(Color.customBlack.opacity(0.7), width: 12)
         .background(.black.opacity(0.5))
+        .clipShape(
+            TicketShape()
+                .rotation(Angle(degrees: 180))
+        )
+        .clipShape(
+            TicketShape()
+                .rotation(Angle(degrees: 0))
+        )
+        .cornerRadius(10)
+        .padding(.horizontal)
+    }
+    
+    var scanCode: some View {
+        VStack(alignment: .center, spacing: 5) {
+            Text("SCAN BARCODE")
+                .font(.outfit(.semibold, size: 14))
+              .kerning(1.4)
+              .foregroundColor(.white.opacity(0.8))
+              .frame(maxWidth: .infinity)
+              .padding(.top)
+            
+            Spacer()
+        }
+        .frame(height: UIScreen.main.bounds.size.height * 0.12)
+        .padding(.horizontal, 20)
+        .background(Color.customBlack.opacity(0.7))
+        .clipShape(
+            TicketShape()
+                .rotation(Angle(degrees: 180))
+        )
         .cornerRadius(10)
         .padding(.horizontal)
     }

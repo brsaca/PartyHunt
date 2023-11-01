@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B3121252AF30F8000ADAE7E /* DetailsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */; };
+		4B3121282AF3173400ADAE7E /* TicketShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121272AF3173400ADAE7E /* TicketShape.swift */; };
 		4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */; };
 		4B675AD82AF086BE00D7DB42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD72AF086BE00D7DB42 /* ListView.swift */; };
 		4B675ADA2AF086BF00D7DB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AD92AF086BF00D7DB42 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsKeys.swift; sourceTree = "<group>"; };
+		4B3121272AF3173400ADAE7E /* TicketShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketShape.swift; sourceTree = "<group>"; };
 		4B675AD22AF086BE00D7DB42 /* PartyHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyHuntApp.swift; sourceTree = "<group>"; };
 		4B675AD72AF086BE00D7DB42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B3121262AF3171600ADAE7E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B3121272AF3173400ADAE7E /* TicketShape.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		4B675AC92AF086BE00D7DB42 = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 		4B67DDD02AF2E70C002D4E9E /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
+				4B3121262AF3171600ADAE7E /* Components */,
 				4B67DDD12AF2E723002D4E9E /* TicketView.swift */,
 			);
 			name = Ticket;
@@ -357,6 +368,7 @@
 				4B675AFA2AF17E9300D7DB42 /* Background.swift in Sources */,
 				4B675B012AF1931700D7DB42 /* Event.swift in Sources */,
 				4B675B062AF198D900D7DB42 /* EventsList.swift in Sources */,
+				4B3121282AF3173400ADAE7E /* TicketShape.swift in Sources */,
 				4B675AFF2AF1857700D7DB42 /* UserAvatar.swift in Sources */,
 				4B675B0F2AF1AD3D00D7DB42 /* Date.swift in Sources */,
 				4B675B0D2AF19F0800D7DB42 /* Status.swift in Sources */,
