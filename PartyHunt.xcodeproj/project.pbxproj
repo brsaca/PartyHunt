@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3121252AF30F8000ADAE7E /* DetailsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */; };
 		4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */; };
 		4B675AD82AF086BE00D7DB42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD72AF086BE00D7DB42 /* ListView.swift */; };
 		4B675ADA2AF086BF00D7DB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AD92AF086BF00D7DB42 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsKeys.swift; sourceTree = "<group>"; };
 		4B675AD22AF086BE00D7DB42 /* PartyHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyHuntApp.swift; sourceTree = "<group>"; };
 		4B675AD72AF086BE00D7DB42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				4B675B002AF1931700D7DB42 /* Event.swift */,
+				4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */,
 				4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */,
 				4B675B0C2AF19F0800D7DB42 /* Status.swift */,
 			);
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B675B0B2AF19EE500D7DB42 /* StatusIcon.swift in Sources */,
+				4B3121252AF30F8000ADAE7E /* DetailsKeys.swift in Sources */,
 				4B67DDC62AF2CBAD002D4E9E /* NavBar.swift in Sources */,
 				4B675AD82AF086BE00D7DB42 /* ListView.swift in Sources */,
 				4B67DDC42AF2CAEC002D4E9E /* View.swift in Sources */,

@@ -29,6 +29,10 @@ extension Event {
     var onlyTime: String {
         return date.timeIn24HourFormat()
     }
+    
+    var details: [DetailsKeys:String] {
+        return [.location: location, .name : name, .date: onlyDate, .time: onlyTime, .dresscode : dressCode.rawValue]
+    }
 }
 
 enum DressCode: String, Codable {

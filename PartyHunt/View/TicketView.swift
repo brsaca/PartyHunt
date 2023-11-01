@@ -22,7 +22,7 @@ struct TicketView: View {
             
         
             // Details
-            
+            detailsSection
             
             // Code
             
@@ -53,9 +53,34 @@ extension TicketView {
             
             Spacer()
         }
-        .frame(height: UIScreen.main.bounds.size.height * 0.3)
+        .frame(height: UIScreen.main.bounds.size.height * 0.25)
         .padding(.horizontal, 20)
         .padding(.top, 20)
+        .border(Color.customBlack, width: 12)
+        .background(.black.opacity(0.5))
+        .cornerRadius(10)
+        .padding(.horizontal)
+    }
+    
+    var detailsSection: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            ForEach(DetailsKeys.allCases, id:\.self) { key in
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(key.rawValue.uppercased())
+                        .font(.outfit(.semibold, size: 12))
+                        .kerning(2.4)
+                        .foregroundColor(.white.opacity(0.6))
+                        .frame(maxWidth:.infinity, alignment:.leading)
+                    
+                    Text(event.details[key]!)
+                        .font(.outfit(.bold, size: 14))
+                        .kerning(1.4)
+                        .foregroundColor(.white)
+                }
+            }
+        }
+        .frame(height: UIScreen.main.bounds.size.height * 0.40)
+        .padding(.horizontal, 20)
         .border(Color.customBlack, width: 12)
         .background(.black.opacity(0.5))
         .cornerRadius(10)
