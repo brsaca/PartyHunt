@@ -28,6 +28,7 @@
 		4B675B0F2AF1AD3D00D7DB42 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675B0E2AF1AD3D00D7DB42 /* Date.swift */; };
 		4B67DDC22AF2C8D6002D4E9E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDC12AF2C8D6002D4E9E /* DetailView.swift */; };
 		4B67DDC42AF2CAEC002D4E9E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDC32AF2CAEC002D4E9E /* View.swift */; };
+		4B67DDC62AF2CBAD002D4E9E /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDC52AF2CBAD002D4E9E /* NavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		4B675B0E2AF1AD3D00D7DB42 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4B67DDC12AF2C8D6002D4E9E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4B67DDC32AF2CAEC002D4E9E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		4B67DDC52AF2CBAD002D4E9E /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				4B675AF92AF17E9200D7DB42 /* Background.swift */,
+				4B67DDC52AF2CBAD002D4E9E /* NavBar.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B675B0B2AF19EE500D7DB42 /* StatusIcon.swift in Sources */,
+				4B67DDC62AF2CBAD002D4E9E /* NavBar.swift in Sources */,
 				4B675AD82AF086BE00D7DB42 /* ListView.swift in Sources */,
 				4B67DDC42AF2CAEC002D4E9E /* View.swift in Sources */,
 				4B675AFD2AF1849C00D7DB42 /* RoundButton.swift in Sources */,

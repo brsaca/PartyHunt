@@ -38,10 +38,7 @@ extension ListView {
                     .offset(x: -1)
             }
         }
-        .padding(.horizontal, 24)
-        .frame(width: .infinity, height: 60)
-        .background(.black.opacity(0.12))
-        .padding(.top, 60)
+        .navBarStyle()
     }
     
     var title: some View {

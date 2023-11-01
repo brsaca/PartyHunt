@@ -11,4 +11,8 @@ extension View {
     func backgroundStyle() -> some View {
         modifier(Background())
     }
+    
+    func navBarStyle() -> some View {
+        modifier(NavBar())
+    }
 }
