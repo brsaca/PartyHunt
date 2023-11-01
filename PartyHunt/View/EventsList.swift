@@ -28,8 +28,8 @@ struct EventsList: View {
                 .id("SECCION1")
             }
         }
-        .scrollBounceBehavior(.basedOnSize)
     }
+    
 }
 
 #Preview {
