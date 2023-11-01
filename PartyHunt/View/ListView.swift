@@ -22,7 +22,7 @@ struct ListView: View {
             // Recommended places
             Spacer()
         }
-        .modifier(Background())
+        .backgroundStyle()
     }
     
 }
