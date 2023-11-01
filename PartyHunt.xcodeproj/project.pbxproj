@@ -33,6 +33,7 @@
 		4B67DDCB2AF2D8E7002D4E9E /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */; };
 		4B67DDCD2AF2DB41002D4E9E /* ScreenBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */; };
 		4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */; };
+		4B67DDD22AF2E723002D4E9E /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDD12AF2E723002D4E9E /* TicketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBar.swift; sourceTree = "<group>"; };
 		4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
+		4B67DDD12AF2E723002D4E9E /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 				4B67DDC02AF2C8A8002D4E9E /* Detail */,
 				4B675AF72AF17DA200D7DB42 /* List */,
 				4B675AF82AF17E7C00D7DB42 /* Modifiers */,
+				4B67DDD02AF2E70C002D4E9E /* Ticket */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,6 +249,14 @@
 			name = Detail;
 			sourceTree = "<group>";
 		};
+		4B67DDD02AF2E70C002D4E9E /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				4B67DDD12AF2E723002D4E9E /* TicketView.swift */,
+			);
+			name = Ticket;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,6 +343,7 @@
 				4B67DDC42AF2CAEC002D4E9E /* View.swift in Sources */,
 				4B675AFD2AF1849C00D7DB42 /* RoundButton.swift in Sources */,
 				4B67DDC22AF2C8D6002D4E9E /* DetailView.swift in Sources */,
+				4B67DDD22AF2E723002D4E9E /* TicketView.swift in Sources */,
 				4B675B092AF19BC700D7DB42 /* EventCell.swift in Sources */,
 				4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */,
 				4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */,
