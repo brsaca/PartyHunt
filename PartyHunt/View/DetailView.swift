@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct DetailView: View {
     //MARK: View Properties
@@ -25,8 +26,11 @@ struct DetailView: View {
                 navBar
                 
                 // image
-                
-                
+                KFImage(event.image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(height: UIScreen.main.bounds.size.height * 0.7)
+                    .offset(y: 50)
             }
             
             
