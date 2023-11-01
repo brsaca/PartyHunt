@@ -23,7 +23,7 @@ struct DetailView: View {
                     .clipped()
                 
                 // NavBar
-                navBar
+                CustomNavBar(screenBar: .concert)
                 
                 // image
                 KFImage(event.image)
@@ -31,36 +31,15 @@ struct DetailView: View {
                     .scaledToFill()
                     .frame(height: UIScreen.main.bounds.size.height * 0.7)
                     .offset(y: 50)
+                
+                //Bottom
             }
-            
             
             // Bottom
             Spacer()
             
         }
         .backgroundStyle()
-    }
-}
-
-extension DetailView {
-    var navBar: some View {
-        HStack {
-            Image(systemName: "chevron.left")
-                .fontWeight(.semibold)
-                .onTapGesture {
-                    
-                }
-            
-            Spacer()
-            
-            Text("CONCERTS")
-                .font(.outfit(.bold, size: 16))
-                .kerning(4.48)
-            
-            Spacer()
-        }
-        .foregroundStyle(.white)
-        .navBarStyle()
     }
 }
 
