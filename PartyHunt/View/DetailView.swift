@@ -13,16 +13,50 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
-            // NavBar
+            ZStack(alignment:.top) {
+                //background
+                Image(.backDetail)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: UIScreen.main.bounds.size.width)
+                    .clipped()
+                
+                // NavBar
+                navBar
+                
+                // image
+                
+                
+            }
             
-            //background
-            
-            // image
             
             // Bottom
             Spacer()
+            
         }
         .backgroundStyle()
+    }
+}
+
+extension DetailView {
+    var navBar: some View {
+        HStack {
+            Image(systemName: "chevron.left")
+                .fontWeight(.semibold)
+                .onTapGesture {
+                    
+                }
+            
+            Spacer()
+            
+            Text("CONCERTS")
+                .font(.outfit(.bold, size: 16))
+                .kerning(4.48)
+            
+            Spacer()
+        }
+        .foregroundStyle(.white)
+        .navBarStyle()
     }
 }
 
