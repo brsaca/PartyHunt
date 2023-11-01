@@ -14,6 +14,7 @@ struct EventsList: View {
                 Section {
                     ForEach(Events.mock.event) { event in
                         EventCell(event: event, status: .booked)
+                            .padding(.horizontal, 20)
                     }
                 } header: {
                     HStack(alignment: .top) {
@@ -34,5 +35,5 @@ struct EventsList: View {
 
 #Preview {
     EventsList()
-        .background(.black)
+        .background(.gray)
 }

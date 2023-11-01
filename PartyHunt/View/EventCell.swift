@@ -42,10 +42,8 @@ struct EventCell: View {
                 .foregroundColor(Color.customYellow)
             
         }
-        .multilineTextAlignment(.center)
         .padding(.horizontal, 24)
         .padding(.vertical, 16)
-        .frame(width: 350, alignment: .center)
         .background(.black.opacity(0.35))
     }
 }
