@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PartyHuntApp: App {
+    // MARK: View Properties
+    @State var viewModel = EventViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ListView()
+                .environment(viewModel)
         }
     }
 }
