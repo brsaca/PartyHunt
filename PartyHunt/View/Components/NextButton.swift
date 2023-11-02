@@ -10,25 +10,26 @@ import SwiftUI
 struct NextButton: View {
     // MARK: View Properties
     let event: Event
-    @Binding var eventSelected: Event?
     
     var body: some View {
-        Image(systemName: "chevron.right")
-            .resizable()
-            .scaledToFit()
-            .frame(width: 20, height: 20)
-            .background(
-                Circle()
-                    .foregroundStyle(.white)
-                    .frame(width: 50, height: 50)
-            )
-            .onTapGesture {
-                eventSelected = event
-            }
+        NavigationLink(destination: {
+            TicketView(event: event)
+                .navigationBarBackButtonHidden(true)
+        }, label: {
+            Image(systemName: "chevron.right")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 20, height: 20)
+                .background(
+                    Circle()
+                        .foregroundStyle(.white)
+                        .frame(width: 50, height: 50)
+                )
+        })
     }
 }
 
 // MARK: - Previews
 #Preview {
-    NextButton(event: Event.mock, eventSelected: .constant(Event.mock))
+    NextButton(event: Event.mock)
 }

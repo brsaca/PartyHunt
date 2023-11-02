@@ -10,17 +10,19 @@ import SwiftUI
 struct EventsList: View {
     // MARK: View Properties
     let events: [Event]
-    @Binding var eventSelected: Event?
     
     var body: some View {
         ScrollView {
             LazyVStack(pinnedViews: [.sectionHeaders]) {
                 Section {
                     ForEach(events) { event in
-                        NavigationLink(value: event) {
-                            EventCell(event: event, status: .booked, eventSelected: $eventSelected)
+                        NavigationLink(destination: {
+                            DetailView(event: event)
+                                .navigationBarBackButtonHidden(true)
+                        }, label: {
+                            EventCell(event: event, status: .booked)
                                 .padding(.horizontal, 20)
-                        }
+                        })
                     }
                 } header: {
                     HStack(alignment: .top) {
@@ -35,15 +37,11 @@ struct EventsList: View {
                 .id("SECCION1")
             }
         }
-        .navigationDestination(for: Event.self) { event in
-            DetailView(event: event, eventSelected: $eventSelected)
-                .navigationBarBackButtonHidden(true)
-        }
     }
     
 }
 
 #Preview {
-    EventsList(events: EventViewModel.preview.eventsLogic.events, eventSelected: .constant(Event.mock))
+    EventsList(events: EventViewModel.preview.eventsLogic.events)
         .background(.customYellow)
 }

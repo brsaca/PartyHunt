@@ -11,7 +11,6 @@ struct EventCell: View {
     // MARK: View Properties
     let event: Event
     let status: Status
-    @Binding var eventSelected: Event?
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
@@ -32,7 +31,7 @@ struct EventCell: View {
                 
                 if (status != .none) {
                     if (status == .next) {
-                        NextButton(event: event, eventSelected: $eventSelected)
+                        NextButton(event: event)
                             .padding(.trailing)
                     } else {
                         StatusIcon(status: status)
@@ -63,9 +62,9 @@ struct EventCell: View {
 
 // MARK: - Previews
 #Preview("booked") {
-    EventCell(event: Event.mock, status: .booked, eventSelected: .constant(Event.mock))
+    EventCell(event: Event.mock, status: .booked)
 }
 
 #Preview("next") {
-    EventCell(event: Event.mock, status: .next, eventSelected: .constant(Event.mock))
+    EventCell(event: Event.mock, status: .next)
 }

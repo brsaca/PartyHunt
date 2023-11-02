@@ -11,7 +11,6 @@ import Kingfisher
 struct DetailView: View {
     //MARK: View Properties
     let event: Event
-    @Binding var eventSelected: Event?
     
     var body: some View {
         VStack {
@@ -38,7 +37,7 @@ struct DetailView: View {
                 VStack {
                     Spacer()
                     
-                    EventCell(event: event, status: .next, eventSelected: $eventSelected)
+                    EventCell(event: event, status: .next)
                 }
             }
         }
@@ -48,5 +47,5 @@ struct DetailView: View {
 
 // MARK: - Previews
 #Preview {
-    DetailView(event: Event.mock, eventSelected: .constant(Event.mock))
+    DetailView(event: Event.mock)
 }
