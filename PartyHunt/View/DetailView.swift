@@ -22,15 +22,16 @@ struct DetailView: View {
                     .frame(width: UIScreen.main.bounds.size.width)
                     .clipped()
                 
-                // NavBar
-                CustomNavBar(screenBar: .concert)
-                
                 // image
                 KFImage(event.image)
                     .resizable()
                     .scaledToFill()
                     .frame(height: UIScreen.main.bounds.size.height * 0.7)
                     .offset(y: 50)
+                
+                // NavBar
+                CustomNavBar(screenBar: .concert)
+                    .padding(.top)
                 
                 //Bottom
                 VStack {

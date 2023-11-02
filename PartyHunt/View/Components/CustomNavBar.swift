@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import OSLog
 
 struct CustomNavBar: View {
     // MARK: View Properties
     let screenBar: ScreenBar
-    
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
         HStack {
             Image(systemName: "chevron.left")
                 .onTapGesture {
-                    
+                    dismiss()
                 }
             
             Spacer()
