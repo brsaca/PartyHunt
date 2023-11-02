@@ -9,6 +9,8 @@ import SwiftUI
 
 struct NextButton: View {
     // MARK: View Properties
+    let event: Event
+    @Binding var eventSelected: Event?
     
     var body: some View {
         Image(systemName: "chevron.right")
@@ -21,12 +23,12 @@ struct NextButton: View {
                     .frame(width: 50, height: 50)
             )
             .onTapGesture {
-                
+                eventSelected = event
             }
     }
 }
 
 // MARK: - Previews
 #Preview {
-    NextButton()
+    NextButton(event: Event.mock, eventSelected: .constant(Event.mock))
 }

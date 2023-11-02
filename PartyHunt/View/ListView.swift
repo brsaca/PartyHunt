@@ -10,6 +10,7 @@ import SwiftUI
 struct ListView: View {
     // MARK: View Properties
     @Environment(EventViewModel.self) var viewModel
+    @State var eventSelected: Event?
     
     var body: some View {
         @Bindable var binding = viewModel.eventsLogic
@@ -22,13 +23,17 @@ struct ListView: View {
                 title
                 
                 // Events nearBy
-                EventsList(events: viewModel.eventsLogic.events)
+                EventsList(events: viewModel.eventsLogic.events, eventSelected: $eventSelected)
                 
                 // Recommended places
                 Spacer()
             }
             .scrollBounceBehavior(.basedOnSize)
             .backgroundStyle()
+            .navigationDestination(item: $eventSelected) { event in
+                TicketView(event: event)
+                    .navigationBarBackButtonHidden(true)
+            }
         }
     }
     

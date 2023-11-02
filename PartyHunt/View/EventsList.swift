@@ -10,6 +10,7 @@ import SwiftUI
 struct EventsList: View {
     // MARK: View Properties
     let events: [Event]
+    @Binding var eventSelected: Event?
     
     var body: some View {
         ScrollView {
@@ -17,7 +18,7 @@ struct EventsList: View {
                 Section {
                     ForEach(events) { event in
                         NavigationLink(value: event) {
-                            EventCell(event: event, status: .booked)
+                            EventCell(event: event, status: .booked, eventSelected: $eventSelected)
                                 .padding(.horizontal, 20)
                         }
                     }
@@ -35,7 +36,7 @@ struct EventsList: View {
             }
         }
         .navigationDestination(for: Event.self) { event in
-            DetailView(event: event)
+            DetailView(event: event, eventSelected: $eventSelected)
                 .navigationBarBackButtonHidden(true)
         }
     }
@@ -43,6 +44,6 @@ struct EventsList: View {
 }
 
 #Preview {
-    EventsList(events: EventViewModel.preview.eventsLogic.events)
+    EventsList(events: EventViewModel.preview.eventsLogic.events, eventSelected: .constant(Event.mock))
         .background(.customYellow)
 }

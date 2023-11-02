@@ -256,10 +256,10 @@
 			children = (
 				4B675B082AF19BC700D7DB42 /* EventCell.swift */,
 				4B67DDCA2AF2D8E7002D4E9E /* CustomNavBar.swift */,
+				4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */,
 				4B675AFC2AF1849C00D7DB42 /* RoundButton.swift */,
 				4B675B0A2AF19EE500D7DB42 /* StatusIcon.swift */,
 				4B675AFE2AF1857700D7DB42 /* UserAvatar.swift */,
-				4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";

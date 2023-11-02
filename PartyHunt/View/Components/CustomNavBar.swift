@@ -30,9 +30,6 @@ struct CustomNavBar: View {
             
             if let icon = screenBar.rigthImage {
                 icon
-                    .onTapGesture {
-                        
-                    }
             }
         }
         .fontWeight(.semibold)
