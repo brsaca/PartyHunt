@@ -124,5 +124,5 @@ extension TicketView {
 
 // MARK: - Previews
 #Preview {
-    TicketView(event: Events.mock.event[0])
+    TicketView(event: Event.mock)
 }

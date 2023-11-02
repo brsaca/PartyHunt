@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct EventsList: View {
+    // MARK: View Properties
+    let events: [Event]
+    
     var body: some View {
         ScrollView {
             LazyVStack(pinnedViews: [.sectionHeaders]) {
                 Section {
-                    ForEach(Events.mock.event) { event in
+                    ForEach(events) { event in
                         EventCell(event: event, status: .booked)
                             .padding(.horizontal, 20)
                     }
@@ -34,6 +37,6 @@ struct EventsList: View {
 }
 
 #Preview {
-    EventsList()
-        .background(.gray)
+    EventsList(events: EventViewModel.preview.eventsLogic.events)
+        .background(.customYellow)
 }

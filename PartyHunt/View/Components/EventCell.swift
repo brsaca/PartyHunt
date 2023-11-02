@@ -14,14 +14,16 @@ struct EventCell: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(event.location)
+            Text(event.location.uppercased())
                 .font(.outfit(.semibold, size: 12))
+                .lineLimit(1)
                 .kerning(2.4)
                 .foregroundColor(.white)
             
             HStack(alignment: .center) {
-                Text(event.name)
+                Text(event.name.uppercased())
                     .font(.outfit(.black, size: 20))
+                    .lineLimit(1)
                     .kerning(2)
                     .foregroundColor(.white)
                 
@@ -60,9 +62,9 @@ struct EventCell: View {
 
 // MARK: - Previews
 #Preview("booked") {
-    EventCell(event: Events.mock.event[0], status: .booked)
+    EventCell(event: Event.mock, status: .booked)
 }
 
 #Preview("next") {
-    EventCell(event: Events.mock.event[0], status: .next)
+    EventCell(event: Event.mock, status: .next)
 }

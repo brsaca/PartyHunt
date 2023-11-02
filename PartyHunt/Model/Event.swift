@@ -7,14 +7,10 @@
 
 import Foundation
 
-struct Events: Codable {
-    let event: [Event]
-}
-
 struct Event: Codable, Identifiable {
-    let id: String
+    let id: Int
     let location: String
-    let date: Date
+    let date: String
     let artist: String
     let name: String
     let image: URL
@@ -23,20 +19,21 @@ struct Event: Codable, Identifiable {
 
 extension Event {
     var onlyDate: String {
-        return date.toString()
+        let dt = date.toDate()
+        return dt?.toString() ?? ""
     }
     
     var onlyTime: String {
-        return date.timeIn24HourFormat()
+        let dt = date.toDate()
+        return dt?.timeIn24HourFormat() ?? "20:00"
     }
     
     var details: [DetailsKeys:String] {
         return [.location: location, .name : name, .date: onlyDate, .time: onlyTime, .dresscode : dressCode.rawValue]
     }
 }
-
 enum DressCode: String, Codable {
-    case funkyPop = "FUNKY POP"
     case emo = "EMO"
+    case funkyPop = "FUNKY POP"
     case hardRock = "HARD ROCK"
 }

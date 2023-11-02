@@ -1,10 +1,11 @@
 [
     {
-        "id":"1",
+        "id":1,
         "location": "MOJIM, NORTH GOA",
         "date":"2023-11-03",
         "artist": "Daniel O Brian",
+        "name": "Aca Fest 2023",
         "image": "https://i.ibb.co/jzzsVrc/daniel.png",
-        "dressCode": "FUNKY POP"
+        "dressCode": "FUNKY POP",
     }
 ]

@@ -22,7 +22,7 @@ extension EventInteractor {
         }
         
         let data = try Data(contentsOf: url)
-        return try JSONDecoder().decode(Events.self, from: data).event
+        return try JSONDecoder().decode([Event].self, from: data)
     }
 }
 

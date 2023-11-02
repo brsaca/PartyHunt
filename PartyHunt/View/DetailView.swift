@@ -46,5 +46,5 @@ struct DetailView: View {
 
 // MARK: - Previews
 #Preview {
-    DetailView(event: Events.mock.event[0])
+    DetailView(event: Event.mock)
 }

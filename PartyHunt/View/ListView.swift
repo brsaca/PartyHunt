@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ListView: View {
+    // MARK: View Properties
+    @Environment(EventViewModel.self) var viewModel
+    
     var body: some View {
+        @Bindable var binding = viewModel.eventsLogic
+        
         VStack(alignment: .leading) {
             // NavBar
             navBar
@@ -17,7 +22,7 @@ struct ListView: View {
             title
             
             // Events nearBy
-            EventsList()
+            EventsList(events: viewModel.eventsLogic.events)
             
             // Recommended places
             Spacer()
@@ -74,4 +79,5 @@ extension ListView {
 // MARK: - Previews
 #Preview {
     ListView()
+        .environment(EventViewModel.preview)
 }
