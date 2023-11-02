@@ -27,6 +27,7 @@ struct ListView: View {
             // Recommended places
             Spacer()
         }
+        .scrollBounceBehavior(.basedOnSize)
         .backgroundStyle()
     }
     
