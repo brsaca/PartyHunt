@@ -7,6 +7,20 @@
 
 import Foundation
 
+struct EventPreviewInteractor: EventInteractor {
+    var bundleURL: URL {
+        Bundle.main.url(forResource: "EventsDev", withExtension: "json")!
+    }
+    
+    var docURL: URL {
+        URL.documentsDirectory.appending(path: "EventsDev.json")
+    }
+}
+
+extension EventViewModel {
+    static let preview = EventViewModel(eventsLogic: EventsLogic(interactor: EventPreviewInteractor()))
+}
+
 extension Events {
     static let mock = Events(event: [
         Event(id: "1", location: "MOJIM, NORTH GOA", date: createDate(from: "2023-11-03"), artist: "Daniel O Brian", name: "PANJIM FEST 2023", image: URL(string: "https://i.ibb.co/jzzsVrc/daniel.png")!, dressCode: .funkyPop),

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		4B3121252AF30F8000ADAE7E /* DetailsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */; };
 		4B3121282AF3173400ADAE7E /* TicketShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121272AF3173400ADAE7E /* TicketShape.swift */; };
+		4B31212A2AF3243E00ADAE7E /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121292AF3243E00ADAE7E /* EventViewModel.swift */; };
+		4B31212C2AF3246D00ADAE7E /* EventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B31212B2AF3246D00ADAE7E /* EventInteractor.swift */; };
+		4B31212E2AF328DE00ADAE7E /* EventsDev.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B31212D2AF328DE00ADAE7E /* EventsDev.json */; };
+		4B3121322AF32B0D00ADAE7E /* EventsFull.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B3121312AF32B0D00ADAE7E /* EventsFull.json */; };
+		4B3121342AF32BD500ADAE7E /* EventsLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3121332AF32BD500ADAE7E /* EventsLogic.swift */; };
 		4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */; };
 		4B675AD82AF086BE00D7DB42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B675AD72AF086BE00D7DB42 /* ListView.swift */; };
 		4B675ADA2AF086BF00D7DB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B675AD92AF086BF00D7DB42 /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 /* Begin PBXFileReference section */
 		4B3121242AF30F8000ADAE7E /* DetailsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsKeys.swift; sourceTree = "<group>"; };
 		4B3121272AF3173400ADAE7E /* TicketShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketShape.swift; sourceTree = "<group>"; };
+		4B3121292AF3243E00ADAE7E /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		4B31212B2AF3246D00ADAE7E /* EventInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInteractor.swift; sourceTree = "<group>"; };
+		4B31212D2AF328DE00ADAE7E /* EventsDev.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EventsDev.json; sourceTree = "<group>"; };
+		4B3121312AF32B0D00ADAE7E /* EventsFull.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EventsFull.json; sourceTree = "<group>"; };
+		4B3121332AF32BD500ADAE7E /* EventsLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLogic.swift; sourceTree = "<group>"; };
 		4B675AD22AF086BE00D7DB42 /* PartyHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B675AD52AF086BE00D7DB42 /* PartyHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyHuntApp.swift; sourceTree = "<group>"; };
 		4B675AD72AF086BE00D7DB42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -128,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				4B675ADC2AF086BF00D7DB42 /* Preview Assets.xcassets */,
+				4B31212D2AF328DE00ADAE7E /* EventsDev.json */,
 				4B675B022AF1952800D7DB42 /* TestData.swift */,
 			);
 			path = "Preview Content";
@@ -156,6 +167,7 @@
 		4B675AE52AF08D7200D7DB42 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4B3121292AF3243E00ADAE7E /* EventViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 		4B675AE72AF08D8600D7DB42 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				4B31212B2AF3246D00ADAE7E /* EventInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -191,6 +204,7 @@
 		4B675AE92AF08D9800D7DB42 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4B3121312AF32B0D00ADAE7E /* EventsFull.json */,
 				4B675AEB2AF092BF00D7DB42 /* Fonts */,
 				4B675AD92AF086BF00D7DB42 /* Assets.xcassets */,
 			);
@@ -200,6 +214,7 @@
 		4B675AEA2AF08DEC00D7DB42 /* ModelLogic */ = {
 			isa = PBXGroup;
 			children = (
+				4B3121332AF32BD500ADAE7E /* EventsLogic.swift */,
 			);
 			path = ModelLogic;
 			sourceTree = "<group>";
@@ -338,9 +353,11 @@
 				4B675ADD2AF086BF00D7DB42 /* Preview Assets.xcassets in Resources */,
 				4B675AF12AF092EC00D7DB42 /* Outfit-Black.ttf in Resources */,
 				4B675AF32AF092EC00D7DB42 /* Outfit-SemiBold.ttf in Resources */,
+				4B31212E2AF328DE00ADAE7E /* EventsDev.json in Resources */,
 				4B675AF22AF092EC00D7DB42 /* Outfit-Bold.ttf in Resources */,
 				4B675AED2AF092D100D7DB42 /* OneBrush.ttf in Resources */,
 				4B675ADA2AF086BF00D7DB42 /* Assets.xcassets in Resources */,
+				4B3121322AF32B0D00ADAE7E /* EventsFull.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,15 +376,18 @@
 				4B675AFD2AF1849C00D7DB42 /* RoundButton.swift in Sources */,
 				4B67DDC22AF2C8D6002D4E9E /* DetailView.swift in Sources */,
 				4B67DDD22AF2E723002D4E9E /* TicketView.swift in Sources */,
+				4B3121342AF32BD500ADAE7E /* EventsLogic.swift in Sources */,
 				4B675B092AF19BC700D7DB42 /* EventCell.swift in Sources */,
 				4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */,
 				4B675AD62AF086BE00D7DB42 /* PartyHuntApp.swift in Sources */,
 				4B675B032AF1952800D7DB42 /* TestData.swift in Sources */,
 				4B67DDCB2AF2D8E7002D4E9E /* CustomNavBar.swift in Sources */,
+				4B31212C2AF3246D00ADAE7E /* EventInteractor.swift in Sources */,
 				4B675AF62AF1763700D7DB42 /* Font.swift in Sources */,
 				4B675AFA2AF17E9300D7DB42 /* Background.swift in Sources */,
 				4B675B012AF1931700D7DB42 /* Event.swift in Sources */,
 				4B675B062AF198D900D7DB42 /* EventsList.swift in Sources */,
+				4B31212A2AF3243E00ADAE7E /* EventViewModel.swift in Sources */,
 				4B3121282AF3173400ADAE7E /* TicketShape.swift in Sources */,
 				4B675AFF2AF1857700D7DB42 /* UserAvatar.swift in Sources */,
 				4B675B0F2AF1AD3D00D7DB42 /* Date.swift in Sources */,
@@ -515,7 +535,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,7 +566,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
