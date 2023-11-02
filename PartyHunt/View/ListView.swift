@@ -13,22 +13,23 @@ struct ListView: View {
     
     var body: some View {
         @Bindable var binding = viewModel.eventsLogic
-        
-        VStack(alignment: .leading) {
-            // NavBar
-            navBar
-            
-            // Title
-            title
-            
-            // Events nearBy
-            EventsList(events: viewModel.eventsLogic.events)
-            
-            // Recommended places
-            Spacer()
+        NavigationStack {
+            VStack(alignment: .leading) {
+                // NavBar
+                navBar
+                
+                // Title
+                title
+                
+                // Events nearBy
+                EventsList(events: viewModel.eventsLogic.events)
+                
+                // Recommended places
+                Spacer()
+            }
+            .scrollBounceBehavior(.basedOnSize)
+            .backgroundStyle()
         }
-        .scrollBounceBehavior(.basedOnSize)
-        .backgroundStyle()
     }
     
 }

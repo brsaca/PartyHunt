@@ -16,8 +16,10 @@ struct EventsList: View {
             LazyVStack(pinnedViews: [.sectionHeaders]) {
                 Section {
                     ForEach(events) { event in
-                        EventCell(event: event, status: .booked)
-                            .padding(.horizontal, 20)
+                        NavigationLink(value: event) {
+                            EventCell(event: event, status: .booked)
+                                .padding(.horizontal, 20)
+                        }
                     }
                 } header: {
                     HStack(alignment: .top) {
@@ -31,6 +33,10 @@ struct EventsList: View {
                 }
                 .id("SECCION1")
             }
+        }
+        .navigationDestination(for: Event.self) { event in
+            DetailView(event: event)
+                .navigationBarBackButtonHidden(true)
         }
     }
     
