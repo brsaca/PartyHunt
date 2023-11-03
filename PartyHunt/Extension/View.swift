@@ -15,4 +15,16 @@ extension View {
     func navBarStyle() -> some View {
         modifier(NavBar())
     }
+    
+    func topTicketStyle() -> some View {
+        modifier(TopTicketContainer())
+    }
+    
+    func middleTicketStyle() -> some View {
+        modifier(MiddleTicketContainer())
+    }
+    
+    func bottomTicketStyle() -> some View {
+        modifier(BottomTicketContainer())
+    }
 }

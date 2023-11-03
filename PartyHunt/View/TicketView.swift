@@ -53,17 +53,7 @@ extension TicketView {
             
             Spacer()
         }
-        .frame(height: UIScreen.main.bounds.size.height * 0.20)
-        .padding(.horizontal, 20)
-        .padding(.top, 20)
-        .background(.black.opacity(0.5))
-        .clipShape(
-            TicketShape()
-                .rotation(Angle(degrees: 0))
-        )
-        .border(Color.customBlack.opacity(0.7), width: 12)
-        .cornerRadius(10)
-        .padding(.horizontal)
+        .topTicketStyle()
     }
     
     var detailsSection: some View {
@@ -83,20 +73,7 @@ extension TicketView {
                 }
             }
         }
-        .frame(height: UIScreen.main.bounds.size.height * 0.40)
-        .padding(.horizontal, 40)
-        .border(Color.customBlack.opacity(0.7), width: 12)
-        .background(.black.opacity(0.5))
-        .clipShape(
-            TicketShape()
-                .rotation(Angle(degrees: 180))
-        )
-        .clipShape(
-            TicketShape()
-                .rotation(Angle(degrees: 0))
-        )
-        .cornerRadius(10)
-        .padding(.horizontal)
+        .middleTicketStyle()
     }
     
     var scanCode: some View {
@@ -111,17 +88,9 @@ extension TicketView {
             KFImage(event.barcode)
                 .resizable()
                 .scaledToFit()
-                .frame(maxHeight: 70)
+                .frame(maxHeight: 50)
         }
-        .frame(height: UIScreen.main.bounds.size.height * 0.15)
-        .padding(.horizontal, 20)
-        .background(Color.customBlack.opacity(0.7))
-        .clipShape(
-            TicketShape()
-                .rotation(Angle(degrees: 180))
-        )
-        .cornerRadius(10)
-        .padding(.horizontal)
+        .bottomTicketStyle()
     }
 }
 

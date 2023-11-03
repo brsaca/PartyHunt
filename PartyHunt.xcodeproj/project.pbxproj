@@ -43,6 +43,7 @@
 		4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */; };
 		4B67DDD22AF2E723002D4E9E /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDD12AF2E723002D4E9E /* TicketView.swift */; };
 		4B7323972AF436B300F5D832 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7323962AF436B300F5D832 /* CarBode */; };
+		4B7BD0C52AF582D300243AB9 /* TicketContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7BD0C42AF582D300243AB9 /* TicketContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBar.swift; sourceTree = "<group>"; };
 		4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		4B67DDD12AF2E723002D4E9E /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		4B7BD0C42AF582D300243AB9 /* TicketContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			children = (
 				4B675AF92AF17E9200D7DB42 /* Background.swift */,
 				4B67DDC52AF2CBAD002D4E9E /* NavBar.swift */,
+				4B7BD0C42AF582D300243AB9 /* TicketContainer.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				4B675AFA2AF17E9300D7DB42 /* Background.swift in Sources */,
 				4B675B012AF1931700D7DB42 /* Event.swift in Sources */,
 				4B675B062AF198D900D7DB42 /* EventsList.swift in Sources */,
+				4B7BD0C52AF582D300243AB9 /* TicketContainer.swift in Sources */,
 				4B31212A2AF3243E00ADAE7E /* EventViewModel.swift in Sources */,
 				4B3121282AF3173400ADAE7E /* TicketShape.swift in Sources */,
 				4B675AFF2AF1857700D7DB42 /* UserAvatar.swift in Sources */,
