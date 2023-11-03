@@ -42,6 +42,7 @@
 		4B67DDCD2AF2DB41002D4E9E /* ScreenBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCC2AF2DB41002D4E9E /* ScreenBar.swift */; };
 		4B67DDCF2AF2E4B3002D4E9E /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDCE2AF2E4B3002D4E9E /* NextButton.swift */; };
 		4B67DDD22AF2E723002D4E9E /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DDD12AF2E723002D4E9E /* TicketView.swift */; };
+		4B7323972AF436B300F5D832 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 4B7323962AF436B300F5D832 /* CarBode */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B67DDC92AF2D54D002D4E9E /* Kingfisher in Frameworks */,
+				4B7323972AF436B300F5D832 /* CarBode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +309,7 @@
 			name = PartyHunt;
 			packageProductDependencies = (
 				4B67DDC82AF2D54D002D4E9E /* Kingfisher */,
+				4B7323962AF436B300F5D832 /* CarBode */,
 			);
 			productName = PartyHunt;
 			productReference = 4B675AD22AF086BE00D7DB42 /* PartyHunt.app */;
@@ -338,6 +341,7 @@
 			mainGroup = 4B675AC92AF086BE00D7DB42;
 			packageReferences = (
 				4B67DDC72AF2D54D002D4E9E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4B7323952AF436B300F5D832 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 			);
 			productRefGroup = 4B675AD32AF086BE00D7DB42 /* Products */;
 			projectDirPath = "";
@@ -616,6 +620,14 @@
 				minimumVersion = 7.10.0;
 			};
 		};
+		4B7323952AF436B300F5D832 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -623,6 +635,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4B67DDC72AF2D54D002D4E9E /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		4B7323962AF436B300F5D832 /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B7323952AF436B300F5D832 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -23,7 +23,7 @@ extension EventViewModel {
 
 extension Event {
     static let mock =
-        Event(id: 1, location: "MOJIM, NORTH GOA", date:"2023-11-03", artist: "Daniel O Brian", name: "PANJIM FEST 2023", image: URL(string: "https://i.ibb.co/jzzsVrc/daniel.png")!, dressCode: .funkyPop)
+    Event(id: 1, location: "MOJIM, NORTH GOA", date:"2023-11-03", artist: "Daniel O Brian", name: "PANJIM FEST 2023", image: URL(string: "https://i.ibb.co/jzzsVrc/daniel.png")!, barcode: URL(string: "https://i.ibb.co/pjWktjs/Frame-1000001107.png")!, dressCode: .funkyPop)
     
     static private func createDate(from dateStr: String) -> Date {
         let dateFormatter = DateFormatter()

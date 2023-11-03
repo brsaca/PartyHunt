@@ -106,11 +106,14 @@ extension TicketView {
               .kerning(1.4)
               .foregroundColor(.white.opacity(0.8))
               .frame(maxWidth: .infinity)
-              .padding(.top)
+              
             
-            Spacer()
+            KFImage(event.barcode)
+                .resizable()
+                .scaledToFit()
+                .frame(maxHeight: 70)
         }
-        .frame(height: UIScreen.main.bounds.size.height * 0.12)
+        .frame(height: UIScreen.main.bounds.size.height * 0.15)
         .padding(.horizontal, 20)
         .background(Color.customBlack.opacity(0.7))
         .clipShape(

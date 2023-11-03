@@ -14,6 +14,7 @@ struct Event: Codable, Identifiable, Hashable {
     let artist: String
     let name: String
     let image: URL
+    let barcode: URL
     let dressCode: DressCode
 }
 
