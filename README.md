@@ -1,6 +1,6 @@
 # Party Hunt - Clean Architecture / SwiftUI17 👋
 
-App using figma design, get data from JSON file [Party Hunt App](https://www.figma.com/file/6kp9ovDTJKRJsc0aDcd1Uc/Party-Hunt-App-(Community)?node-id=1%3A8&mode=dev))
+App using figma design, get data from JSON file [Party Hunt App](https://www.figma.com/file/6kp9ovDTJKRJsc0aDcd1Uc/Party-Hunt-App-(Community)?node-id=1%3A8&mode=dev)
 <p align="center">
 <a href="#">
  <img src="images/demo.gif" align="center" width=50%> 
